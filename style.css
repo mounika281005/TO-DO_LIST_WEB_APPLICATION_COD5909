@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800;900&display=swap'); /* Importing Google Fonts */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Setting global styles and font-family */
+}
+
+::-webkit-scrollbar {
+    display: none; /* Hiding scrollbar */
+}
+
+body{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('background.jpeg'); /* Background image */
+    background-size: cover; 
+    background-position: center; 
+    background-color: rgb(245, 241, 195); /* Background color */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 400px; /* Margin for container */
+    min-width: 500px;
+    max-width: 1000px;
+    background-image: linear-gradient(#f8c390, #f78fad); /* Background gradient */
+    border-radius: 20px; /* Border radius */
+    padding: 20px; /* Padding for container */
+}
+
+.container header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px; /* Margin bottom for header */
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 10px; /* Margin bottom for heading */
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+header .input-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.input-section input {
+    margin-right: 10px; /* Margin for input field */
+    max-width: 100%; /* Maximum width for input field */
+}
+
+.max-w-xs {
+    max-width: 20rem; /* Maximum width for extra small screens */
+}
+
+.w-full {
+    width: 100%; /* Full width */
+}
+
+.input {
+    border-radius: 0.5rem; /* Border radius for input */
+    height: 3rem; /* Height for input */
+    border-width: 2px black solid; /* Border style for input */
+    flex-shrink: 1;
+    padding: 0rem 1rem; /* Padding for input */
+    font-size: 1.2rem; /* Font size for input */
+    line-height: 2; /* Line height for input */
+}
+
+.todos-filter, .filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px; /* Margin bottom for filter section */
+}
+
+.filters {
+  margin-top: 10px; /* Margin top for filters */
+}
+
+.todos-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100%; /* Minimum height for todo list */
+    max-height: 54vh; /* Maximum height for todo list */
+    overflow-y: scroll; /* Overflow for scrolling */
+    width: 100%; /* Full width */
+}
+
+.todos-list .todo-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Padding for todo items */
+    width: 100%;
+}
+
+.todo-item{
+      background-color: wheat; /* Background color for todo items */
+      border-radius: 12px; /* Border radius for todo items */
+      margin-bottom: 5px; /* Margin bottom for todo items */
+}
+
+.todo-item p{
+    margin-right: 10px; /* Margin right for todo item text */
+    font-size: 1.4rem; /* Font size for todo item text */
+}
+
+.todo-item .todo-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end; /* Justify content to end for todo actions */
+    width: 100%;
+    height: 100%;
+}
+
+.todo-actions button:not(:last-child){
+    margin-right: 10px; /* Margin right for todo action buttons */
+}
+
+.di, .ci{
+    pointer-events: none; /* Disabling pointer events for certain elements */
+}
+
+.line{
+    text-decoration: line-through; /* Adding line-through decoration */
+}
+
+.btn{
+    cursor: pointer; /* Setting cursor to pointer for buttons */
+    user-select: none;
+    border: none; /* Removing border */
+    outline: none; /* Removing outline */
+    text-align: center;
+    border-radius: 0.5rem; /* Border radius for buttons */
+    height: 3rem; /* Height for buttons */
+    min-height: 3rem;
+    text-transform: uppercase;
+    border-width:1px;
+    animation: button-pop var(--animation-btn,.25s)ease-in-out; /* Button animation */
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem; /* Padding left for buttons */
+    padding-right: 1rem; /* Padding right for buttons */
+    font-size: .875rem; /* Font size for buttons */
+    font-weight: 600; /* Font weight for buttons */
+    line-height: 1em; /* Line height for buttons */
+    text-decoration-line: none; /* Removing text decoration */
+    transition: .2s all cubic-bezier(.4,0,.2,1); /* Button transition */
+    display: inline-flex; /* Display as inline-flex */
+}
+
+.btn:hover{
+    background-color: rgb(108, 109, 110); /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+.btn-add{
+    background-color: green; /* Background color for add button */
+    color: white; /* Text color for add button */
+}
+
+.btn-add:hover{
+    background-color: white; /* Background color on hover for add button */
+    color:rgb(255, 221, 0); /* Text color on hover for add button */
+}
+
+.btn-success{
+    opacity: 1;
+    background-color:rgb(50, 177, 50); /* Background color for success button */
+    color: white; /* Text color for success button */
+}
+
+.btn-success:hover{
+    background-color: white; /* Background color on hover for success button */
+    color:rgb(50, 177, 50); /* Text color on hover for success button */
+}
+
+.btn-error{
+    opacity: 1;
+    background-color:rgb(246, 77, 4); /* Background color for error button */
+    color: white; /* Text color for error button */
+}
+
+.btn-error:hover{
+    background-color: white; /* Background color on hover for error button */
+    color:rgb(246, 77, 4); /* Text color on hover for error button */
+}
+
+.dropbtn {
+    background-color: green; /* Background color for dropdown button */
+    color: white; /* Text color for dropdown button */
+    padding: 10px 16px; /* Padding for dropdown button */
+    font-size: 16px; /* Font size for dropdown button */
+    border: none; /* Removing border */
+    cursor: pointer; /* Setting cursor to pointer */
+    border-radius: 5px; /* Border radius for dropdown button */
+} 
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none; /* Initially hiding dropdown content */
+    position: absolute;
+    background-color: #f9f9f9; /* Background color for dropdown content */
+    min-width: 160px; /* Minimum width for dropdown content */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Box shadow for dropdown content */
+    z-index: 1; /* Setting z-index */
+} 
+
+.dropdown-content a {
+    color: black; /* Text color for dropdown links */
+    padding: 12px 16px; /* Padding for dropdown links */
+    text-decoration: none; /* Removing text decoration */
+    display: block; /* Display as block */
+} 
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Background color on hover for dropdown links */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Displaying dropdown content on hover */
+}
+
+.dropdown:hover .dropbtn {
+    background-color: white; /* Background color on hover for dropdown button */
+    color: yellowgreen; /* Text color on hover for dropdown button */
+}
+
+@media only screen and (max-width: 530px) {
+    .container {
+        margin: 0 20px; /* Margin for container on smaller screens */
+        max-width: 96%; /* Maximum width for container on smaller screens */
+        min-width: 96%; /* Minimum width for container on smaller screens */
+    }
+}
