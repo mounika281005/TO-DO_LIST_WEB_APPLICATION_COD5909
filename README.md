@@ -86,3 +86,13 @@ To use the To-Do List Web Application, users can follow these steps:
 ### Conclusion:  
 Building a To-Do List Web Application is an excellent project for honing your web development skills and creating a practical tool for task management. 
 By following this documentation and understanding the code, you'll be well-equipped to tackle similar projects and customize the application to suit your specific needs. Whether you're a beginner or an experienced developer, this project offers valuable learning opportunities and the satisfaction of building something useful from scratch. Start building your own To-Do List Web Application today and empower yourself to stay organized and productive!
+
+### Output:
+
+![Screenshot (8)](https://github.com/mounika281005/TO-DO_LIST_WEB_APPLICATION_COD5909/assets/143736675/b95dce39-3dca-4c64-86f1-8ac09b16c548)
+
+![Screenshot (9)](https://github.com/mounika281005/TO-DO_LIST_WEB_APPLICATION_COD5909/assets/143736675/816713e9-5c64-44fe-9039-e6c345531d3a)
+
+![Screenshot (10)](https://github.com/mounika281005/TO-DO_LIST_WEB_APPLICATION_COD5909/assets/143736675/248b4320-22b7-4b6f-96cb-969dedd71a5f)
+
+![Screenshot (11)](https://github.com/mounika281005/TO-DO_LIST_WEB_APPLICATION_COD5909/assets/143736675/84bc1509-f59a-452b-83bb-5017a1204454)
